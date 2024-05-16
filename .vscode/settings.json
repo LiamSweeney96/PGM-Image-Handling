@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "validatedimensions.h": "c",
+        "structs.h": "c",
+        "testfiles.h": "c",
+        "string.h": "c",
+        "a2bread.h": "c",
+        "exitcodes.h": "c",
+        "stdio.h": "c",
+        "validatedata.h": "c",
+        "b2aconvert.h": "c"
+    }
+}

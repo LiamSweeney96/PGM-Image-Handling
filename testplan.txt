@@ -1,0 +1,17 @@
+
+For this assignment I will be implementing Unit Testing, 
+Integration Testing, and Functional Testing. The purpose
+of these tests are to ensure the code is robust and works
+as intended. The unit testing will enable isolation of different 
+areas of the program to ensure they are correct through its 
+strict nature. If the code doesn't satisfy these tests,
+it will fail.
+
+Integration testing allows for testing modules as a 
+combined group which will show if there are any bugs 
+with the programme when attempting to run it as one. 
+This stage will occur after the unit tests have all been 
+passed. Finally, functional tests will be undertaken. 
+This is to ensure the output that is given from the 
+programme is always correct, and that there are no 
+specific inputs that, when entered, break the programme. 

@@ -1,0 +1,61 @@
+1. main:
+
+    This module will validate the command line arguments that have been 
+    provided. If an incorrect number of arguments has been supplied, an
+    error message will be output and the programme will return an error
+    code.
+    If the arguments pass validation, arg[1] (the input file name) will 
+    be copied to a char array to be used later on in the programme. 
+
+2. pgmInit:
+
+    This module will initialise the struct variables and allocate memory for
+    storing values from the input file. 
+    Also, it will open the input file which was provided as a command line 
+    argument, as well as validating said file (i.e does it exist? Has an arg 
+    actually been given?).
+
+3. readFile
+
+    This module will read from the file post validation, and assign values
+    to the magic number array. It will also scan for whitespace to ensure
+    no incorrect values are assigned.
+
+4.  freeLists: 
+
+    Allocated lists will be freed to reduce memory wastage.
+
+5. readDimension:
+
+    This module will read in the width, height and grays. It will then
+    validate these inputs, freeing the memory and closing the file if 
+    it fails as well as printing an error message. It will then return
+    an error code.
+    This module will take in a FILE pointer and a pointer to the structure
+    containing the imageData variable as parameters.
+
+6. imageAlloc:
+
+    This module will allocate memory for the imageData and perform checks
+    to see if the memory allocation was successful. If not, it will return
+    an error code.
+
+7. outputCheck:
+
+    This module will attempt to write to a file using argv[2] which will 
+    be stored elsewhere for use here. Some validation will occur in order
+    to check the output file has been supplied/exists. It will then print 
+    the magic number, size & gray value to the file.
+    If the write fails, the memory will be freed and an error code will
+    be returned.
+
+8. outputWrite:
+
+    If module 7 is successful, this module will loop through the file and 
+    retrieve the gray value, followed by writing it to the outputFile.
+    If this fails, an error code will be returned.
+
+9. structs:
+
+    This module will contain variables related to the specified
+    structs. This will help with combining different data types.
